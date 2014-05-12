@@ -1,79 +1,417 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if IE 6]>
+<html id="ie6" class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7"  class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8"  class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9"  class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Portfolio : " />
+<!-- This doesn't work but i prefer to leave it here... maybe in the future the MS will support it... i hope... -->
+<!--[if IE 10]>
+<html id="ie10"  class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<!--[if gt IE 9]>
+<html class="ie"lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
 
-    <title>Portfolio</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mattiapozzati/portfolio">View on GitHub</a>
-
-          <h1 id="project_title">Portfolio</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mattiapozzati/portfolio/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mattiapozzati/portfolio/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Portfolio maintained by <a href="https://github.com/mattiapozzati">mattiapozzati</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<![if !IE]>
+<html lang="it-IT" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Chi siamo | DolcevitaFood</title>          
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/style.css" />
+    <link rel="pingback" href="http://www.dolcevitafood.it/newdolcevita/xmlrpc.php" />                              
+	
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/css/lessthen960.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/css/lessthen600.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/css/lessthen480.css" />
+	    
     
 
-  </body>
+    <!-- [favicon] begin -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.dolcevitafood.it/newdolcevita/wp-content/uploads/2014/04/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="http://www.dolcevitafood.it/newdolcevita/wp-content/uploads/2014/04/favicon.ico" />
+    <!-- [favicon] end -->
+
+                    <style>
+                .wishlist_table .add_to_cart, .yith-wcwl-add-button > a.button.alt { border-radius: 16px; -moz-border-radius: 16px; -webkit-border-radius: 16px; }            </style>
+            <script type="text/javascript">
+            var yith_wcwl_plugin_ajax_web_url = 'http://www.dolcevitafood.it/newdolcevita/wp-admin/admin-ajax.php';
+            var login_redirect_url= 'http://www.dolcevitafood.it/newdolcevita/wp-login.php?redirect_to=%2Fnewdolcevita%2F%3Fpage_id%3D105';
+            </script>
+            <meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/rss+xml" title="DolcevitaFood &raquo; Feed" href="http://www.dolcevitafood.it/newdolcevita/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="DolcevitaFood &raquo; Feed dei commenti" href="http://www.dolcevitafood.it/newdolcevita/?feed=comments-rss2" />
+<link rel="alternate" type="application/rss+xml" title="DolcevitaFood &raquo; Chi siamo Feed dei commenti" href="http://www.dolcevitafood.it/newdolcevita/?feed=rss2&#038;page_id=105" />
+<link rel='stylesheet' id='dashicons-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-includes/css/dashicons.min.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/thickbox/thickbox.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-style-css'  href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='pacifico-font-css'  href='http://fonts.googleapis.com/css?family=Pacifico&#038;subset=latin%2Clatin-ext%2Ccyrillic%2Cgreek%2Clatin-ext&#038;ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rokkitt-font-css'  href='http://fonts.googleapis.com/css?family=Rokkitt&#038;subset=latin%2Clatin-ext%2Ccyrillic%2Cgreek%2Clatin-ext&#038;ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='droid-sans-font-css'  href='http://fonts.googleapis.com/css?family=Droid+Sans&#038;subset=latin%2Clatin-ext%2Ccyrillic%2Cgreek%2Clatin-ext&#038;ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='shadows-into-light-font-css'  href='http://fonts.googleapis.com/css?family=Shadows+Into+Light&#038;subset=latin%2Clatin-ext%2Ccyrillic%2Cgreek%2Clatin-ext&#038;ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/css/prettyPhoto.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tipsy-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/css/tipsy.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/css/flexslider.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-css-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/custom.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='apm-styles-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce-accepted-payment-methods/assets/css/style.css?ver=3.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='yit-layout-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/woocommerce/style.css?ver=1.0' type='text/css' media='' />
+<link rel='stylesheet' id='layerslider-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/LayerSlider/static/css/layerslider.css?ver=5.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-main-css'  href='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/yith_wishlist/assets/css/style.css?ver=3.9.1' type='text/css' media='all' />
+<script type="text/javascript">
+    var yiw_prettyphoto_style = 'pp_default';
+</script>
+    <script type="text/javascript">      
+    var     yiw_product_slider_interval = 6;</script>
+    <script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.prettyPhoto.js?ver=3.0'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.tipsy.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/twitter-text.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.nivo.slider.pack.js?ver=2.5.2'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.cycle.min.js?ver=2.94'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/core/includes/js/jquery.jcarousel.min.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/js/jquery.mobilemenu.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.0.0'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/LayerSlider/static/js/greensock.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/LayerSlider/static/js/layerslider.transitions.js?ver=5.0.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.dolcevitafood.it/newdolcevita/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.dolcevitafood.it/newdolcevita/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Ricette' href='http://www.dolcevitafood.it/newdolcevita/?page_id=69' />
+<meta name="generator" content="WordPress 3.9.1" />
+<meta name="generator" content="WooCommerce 2.1.7" />
+<link rel='canonical' href='http://www.dolcevitafood.it/newdolcevita/?page_id=105' />
+<link rel='shortlink' href='http://www.dolcevitafood.it/newdolcevita/?p=105' />
+    <script type="text/javascript">
+    jQuery(document).ready(function($){   
+        $('body').bind('added_to_cart', function(){
+            $('.add_to_cart_button.added').text('ADDED');
+        });               
+    });
+    </script>
+    	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">	.shop-traditional .products li { width:164px !important; }
+	.shop-traditional .products li img { width:150px; }
+    .shop-traditional .products li.category img { width:225px; }
+	.shop-ribbon .products li { width:155px !important; }
+    .shop-ribbon .products li.category { width: auto !important; }
+	.products li a strong { width:120px !important; }
+	/*..shop-traditional .products li a img { width:150px !important; }  removed for the category images */
+	div.product div.images { width:71.388888888889%; }
+	.layout-sidebar-no div.product div.images { width:53.541666666667%; }
+	div.product div.images img { width:500px; }
+	.layout-sidebar-no div.product div.summary { width:44.375%; }
+	.layout-sidebar-right div.product div.summary, .layout-sidebar-left div.product div.summary { width:25.833333333333%; }
+	.layout-sidebar-no .product.hentry > span.onsale { right:436px; left:auto; }
+	.layout-sidebar-right .product.hentry > span.onsale, .layout-sidebar-left .product.hentry > span.onsale { right:196px; left:auto; }     
+	.ei-slider {height:400px;}
+body, .stretched-layout .wrapper {
+    background-color: #FFCC66;
+background-image:  url('http://www.dolcevitafood.it/newdolcevita/wp-content/uploads/2014/04/3farfalle.jpg');
+background-position: top center;
+background-repeat: repeat;
+background-attachment: fixed}
+#header { background:#F8DEAB; }    .wrapper-content { width:700px; }
+    #portfolio li img, #portfolio li .thumb,  { width:280px;height:143px; }.portfolio-slider li a img, .portfolio-slider li a, .portfolio-slider li { width:205px;height:118px; }#portfolio-bigimage img { width:617px;height:295px; }.gallery-wrap li img, .gallery-wrap .internal_page_item { width:208px;height:168px; }#logo a.logo-text { font-family: 'Pacifico', sans-serif !important; }
+#logo .logo-description { font-family: 'Rokkitt', sans-serif !important; }
+#nav > ul > li > a, #nav .menu > ul > li > a { font-family: 'Rokkitt', sans-serif !important; }
+#nav ul.children li a, #nav ul.sub-menu li a { font-family: 'Rokkitt', sans-serif !important; }
+#content li, #content li a, address, p, p a, .unoslider_caption, .comment-body, .comment-body p, #comments .fn, .cart span, .shop_table span, .shop_table th, .shop_table td, #respond #submit, .shop-ribbon .products li .below-thumb, .products li a strong.below-thumb, .products.ribbon .below-thumb { font-family: 'Droid Sans', sans-serif !important; }
+h1, h1 a { font-family: 'Rokkitt', sans-serif !important; }
+h2, h2 a { font-family: 'Rokkitt', sans-serif !important; }
+h3, h3 a { font-family: 'Rokkitt', sans-serif !important; }
+h4, h4 a { font-family: 'Rokkitt', sans-serif !important; }
+h5, h5 a { font-family: 'Rokkitt', sans-serif !important; }
+h6, h6 a { font-family: 'Rokkitt', sans-serif !important; }
+#slider .slider-nivo-static h3, .slider-minilayers-static h3, #slider .slider-nivo-static .short-text, .slider-minilayers-static .short-text { font-family: 'Rokkitt', sans-serif !important; }
+#slider .slider-nivo-static h3 span, .slider-minilayers-static h3 span { font-family: 'Rokkitt', sans-serif !important; }
+#slider .slider-nivo-static p, .slider-minilayers-static p { font-family: 'Droid Sans', sans-serif !important; }
+#slogan h2 { font-family: 'Rokkitt', sans-serif !important; }
+#slogan h3 { font-family: 'Rokkitt', sans-serif !important; }
+#sidebar .widget h2, #sidebar .widget h3, #footer .widget h2, #footer .widget h3 { font-family: 'Rokkitt', sans-serif !important; }
+.testimonial .testimonial-name a.name, .testimonial-name span.name, #primary .testimonials-slider ul li a { font-family: 'Shadows Into Light', sans-serif !important; }
+#vacation, #vacation p, #vacation li, #vacation p a { font-family: 'Rokkitt', sans-serif !important; }
+div.popup .title { font-family: 'Rokkitt', sans-serif !important; }
+div.popup, div.popup_message, div.popup_message p, div.popup_message span { font-family: 'Rokkitt', sans-serif !important; }
+.special-font, .call-to-action-two .special-font, .call-to-action-two .special-font span { font-family: 'Shadows Into Light', sans-serif !important; }
+</style>
+</head>
+
+<body class="page page-id-105 page-template-default no_js responsive not-logged-in shop-ribbon boxed-layout gecko google-font-pacifico google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-droid-sans google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-droid-sans google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-shadows-into-light google-font-rokkitt google-font-rokkitt google-font-rokkitt google-font-shadows-into-light">
+    
+                                 
+    <!-- START SHADOW WRAPPER -->
+    <div class="bg-shadow group">        
+                             
+        <!-- START WRAPPER -->
+        <div class="wrapper group">        
+            
+            <!-- START HEADER -->
+            <div id="header" class="group">   
+        
+                <!-- TOPBAR -->
+                
+                <div id="top">
+			<div class="inner">
+                <div class="topbar-left">
+                                    <p></p>
+                                
+                                </div>
+                <div class="topbar-right">
+                                                  
+		
+			<div id="sidebar-topbar">
+				 
+				 
+				
+                		
+				       
+				 
+			</div>                    <ul class="topbar-level-1">
+                                                                       <li><a href="http://www.dolcevitafood.it/newdolcevita/?page_id=18">Login/Registrati</a></li>
+                                            </ul>
+                </div>
+				                <div id="cart">
+						   
+	<a class="widget_shopping_cart trigger" href="http://www.dolcevitafood.it/newdolcevita/?page_id=16">
+		<span class="minicart">0 elementi </span>
+	</a>
+	
+		<div class="quick-cart">
+    	<ul class="cart_list product_list_widget">            <li class="empty">Nessun prodotto nel carrello.</li>    	
+    	   <li class="view-cart-button"><a class="view-cart-button" href="http://www.dolcevitafood.it/newdolcevita/?page_id=16">View cart</a></li>
+    	
+    	</ul>
+    	
+    </div>				</div><!-- #cart -->
+							</div><!-- .inner -->
+		</div><!-- #top -->                <!-- END TOPBAR -->  
+                
+                <div class="group inner">
+                	<!-- START CUSTOM TEXT HEADER -->
+                	<div class="custom-text left-top"  >
+                                            </div>
+                	<!-- END CUSTOM TEXT HEADER -->
+                	<!--<div class="slogan">
+                    	<p id="slogan-titolo">DolceVitaFOOD.co.uk</p>
+                    	<p id="slogan-sottotitolo">Prodotti Tipici Italiani online a casa tua</p>
+                    </div>-->
+                    <!-- START LOGO -->
+                    <div id="logo" class="group">
+                    	<img src="http://www.dolcevitafood.it/newdolcevita/wp-content/uploads/2014/05/logo-dolcevita.png" />
+                    </div>
+                    
+                  
+                    <!-- END LOGO -->
+                     
+                    
+                      
+                    
+                    <!-- START SEARCHFORM -->
+                    <form role="search" method="get" id="searchform" action="http://www.dolcevitafood.it/newdolcevita/">
+    <div><label class="screen-reader-text" for="s">Cerca</label>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value=" " />
+        <input type="hidden" name="post_type" value="product" />
+    </div>
+</form>                    <!-- END SEARCHFORM -->
+                
+                    <!-- START NAV -->
+                    <div id="nav" class="group">
+                        <ul id="menu-main-menu" class="level-1"><li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://www.dolcevitafood.it/newdolcevita/">Home</a></li>
+<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71"><a href="http://www.dolcevitafood.it/newdolcevita/?page_id=69">Ricette</a>
+<ul class="sub-menu">
+	<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=32">Antipasti</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-89"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=34">Primi</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=35">Secondi</a></li>
+	<li id="menu-item-91" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=36">Focacce e Torte Salate</a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=33">Salse e Condimenti</a></li>
+	<li id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="http://www.dolcevitafood.it/newdolcevita/?cat=37">Dessert</a></li>
+</ul>
+</li>
+<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-105 current_page_item menu-item-107"><a href="http://www.dolcevitafood.it/newdolcevita/?page_id=105">Chi siamo</a></li>
+</ul>    
+                    </div>
+                    <!-- END NAV -->     
+                </div>
+            </div>   
+            <!-- END HEADER -->
+            
+                        
+            <!-- SLIDER -->
+                        <!-- /SLIDER -->                        
+        	    
+        	                         
+        
+		<div id="primary" class="layout-sidebar-right">    
+		    <div class="inner group">
+                                			
+    			  
+
+				
+                <!-- START CONTENT -->
+                <div id="content" class="group">
+                    <p id="crumbs" class="theme_breadcumb"><a class="home" href="http://www.dolcevitafood.it/newdolcevita">Home Page</a>  &rsaquo;  <a class="no-link current" href="#">Chi siamo</a></p>
+                    <h2>Chi siamo</h2>			<div id="post-105" class="post-105 page type-page status-publish hentry group"><p><span style="color: #000000;">I frutti di una terra antica, fatti di natura vera e di sapienza tramandata nel tempo&#8230;.</span><br style="color: #551f00;" /><span style="color: #000000;">I sapori più gustosi e genuini, che solo la passione sa creare&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">Dolcevita Food sa cercare, trovare, scegliere, selezionare i tesori più buoni e veri delle nostre terre&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">quello che più ci piace&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">lo scegliamo anche per voi&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">DolcevitaFood: dalla nostra terra.</span><br style="color: #551f00;" /><br style="color: #551f00;" /><br style="color: #551f00;" /><span style="color: #000000;">L&#8217;Italia, con le sue fragranze, le sue tradizioni, la sua cultura del cibo&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">Da sempre inimitabile esempio di eccellenza in cucina.</span><br style="color: #551f00;" /><span style="color: #000000;">Il Friuli: una piccola regione, crocevia di influssi e di storie, dove la genuinità e la particolarità dei cibi è ancora preservata, sapori inalterati e puri, specialtà caratteristiche e prelibatezze uniche.</span><br style="color: #551f00;" /><span style="color: #000000;">DolcevitaFood è nato per farti conoscere e gustare questi prodotti.</span><br style="color: #551f00;" /><span style="color: #000000;">Siamo esperti della cucina e delle particolarità della nostra regione, il Friuli, perchè da sempre scopriamo ed amiamo i prodotti più buoni della nostra terra.</span><br style="color: #551f00;" /><span style="color: #000000;">Ma selezioniamo accuratamente anche tanti altri prodotti tipici italiani, caratteristici di tutte le regioni d&#8217;Italia, che naturalmente soddisfino i nostri severi criteri di genuinità, origine controllata e altissima qualità.</span><br style="color: #551f00;" /><span style="color: #000000;">Dal Friuli, dall&#8217;Italia tutta, DolcevitaFood ti offre un panorama di gusti unici.</span><br style="color: #551f00;" /><br style="color: #551f00;" /><br style="color: #551f00;" /><span style="color: #000000;">Il nostro accurato servizio di selezione e vendita segue le tue esigenze, per farti avere a casa tua, nel minor tempo possibile, specialità particolari e squisite.</span><br style="color: #551f00;" /><span style="color: #000000;">Collaboriamo con le migliori aziende, i migliori produttori e i più affidabili e veloci servizi di corriere, per una qualità sempre superiore.</span><br style="color: #551f00;" /><span style="color: #000000;">E a prezzi sempre molto competitivi.</span><br style="color: #551f00;" /><br style="color: #551f00;" /><br style="color: #551f00;" /><span style="color: #000000;">Ora rilassati, e scegli tra le nostre specialità.</span><br style="color: #551f00;" /><span style="color: #000000;">Perchè con DolcevitaFood, la bontà arriva con un sempice click&#8230;</span><br style="color: #551f00;" /><span style="color: #000000;">Buon appetito!</span></p>
+			</div>                    
+                    
+			<div id="comments">
+
+
+
+
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Lascia un Commento <small><a rel="nofollow" id="cancel-comment-reply-link" href="/newdolcevita/?page_id=105#respond" style="display:none;">Cancella commento</a></small></h3>
+									<form action="http://www.dolcevitafood.it/newdolcevita/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										<p class="comment-form-author"><label for="author">Nome</label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Sito web</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Il tuo commento</label><textarea id="comment" name="comment" cols="45" rows="8"></textarea></p><div class="clear"></div>												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Invia Commento" />
+							<input type='hidden' name='comment_post_ID' value='105' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+											</form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments -->
+                </div>
+                <!-- END CONTENT -->
+
+				                
+                <!-- START SIDEBAR -->
+                                              
+			
+              
+		
+				<div id="sidebar" class="group one-fourth last">
+					 
+					 
+					
+	                			
+            
+            <div class="widget">            
+                <h3>Cerca</h3>
+                <form role="search" method="get" id="searchform" action="http://www.dolcevitafood.it/newdolcevita/">
+    <div><label class="screen-reader-text" for="s">Cerca</label>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="Cerca" />
+        <input type="hidden" name="post_type" value="post" />
+    </div>
+</form>            </div>
+            
+            <div class="widget">
+                <h3>Archivi</h3>
+                <ul>
+                    	<li><a href='http://www.dolcevitafood.it/newdolcevita/?m=201405'>maggio 2014</a>&nbsp;(37)</li>
+	<li><a href='http://www.dolcevitafood.it/newdolcevita/?m=201404'>aprile 2014</a>&nbsp;(2)</li>
+                </ul>
+            </div>
+            
+            <div class="widget">
+                <h3>Categorie</h3>
+                <ul>
+                    <li class="cat-item-none">Nessuna categoria</li>                </ul>
+            </div>
+            
+            <div class="widget">
+                <h3>Blogroll</h3>
+                <ul>
+                                    </ul>
+            </div>
+        
+        			
+					       
+					 
+				</div>
+				
+                            <!-- END SIDEBAR -->    
+                                  
+                <!-- START EXTRA CONTENT -->
+        					           
+		
+			 
+			        
+                <!-- END EXTRA CONTENT -->
+            </div>
+        </div>       
+        
+                <div class="clear"></div>
+                                
+                <!-- START FOOTER -->
+                <div id="copyright" class="group">
+                    <div class="inner group">
+                                                <div class="left">
+                            <p><a href="http://yithemes.com/"><img src="http://yithemes.com/cdn/images/various/footer_yith_blu.png" alt="Your Inspiration Themes" style="position:relative; top:9px; margin: -11px 5px 0 0;" /></a> Powered by <a href="http://yithemes.com/" title="free themes wordpress"><strong>Your Inspiration Themes</strong></a></p>
+                        </div>
+                        <div class="right">
+                            <p>Powered by <a href="http://yithemes.com/" title="free themes wordpress"><strong>Your Inspiration Themes</strong></a></p>
+  
+                        </div>
+                                            </div>
+                </div>
+                <!-- END FOOTER -->     
+            </div>     
+            <!-- END WRAPPER -->        
+        </div>     
+        <!-- END SHADOW WRAPPER -->     
+    
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Succ. \u00bb","prev":"\u00ab Prec.","image":"Immagine","of":"di","close":"Chiudi","noiframes":"Questa funzionalit\u00e0 richiede frame in linea. Si hanno i frame disabilitati o il browser non li supporta.","loadingAnimation":"http:\/\/www.dolcevitafood.it\/newdolcevita\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/underscore.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/shortcode.min.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-admin/js/media-upload.min.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/js/jquery.custom.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-includes/js/comment-reply.min.js?ver=3.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/newdolcevita\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/www.dolcevitafood.it\/newdolcevita\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif","i18n_view_cart":"Vedi il carrello","cart_url":"http:\/\/www.dolcevitafood.it\/newdolcevita\/?page_id=16","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.1.7'></script>
+<script type='text/javascript' src='//www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.60'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/newdolcevita\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/www.dolcevitafood.it\/newdolcevita\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.1.7'></script>
+<script type='text/javascript' src='//www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/newdolcevita\/wp-admin\/admin-ajax.php","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.dolcevitafood.it/newdolcevita/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.1.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var objectL10n = {"wait":"attendi..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/js/contact.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var yith_wcwl_l10n = {"out_of_stock":"Cannot add to the cart as product is Out of Stock!"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dolcevitafood.it/newdolcevita/wp-content/themes/maya/inc/yith_wishlist/assets/js/jquery.yith-wcwl.js?ver=1.0'></script>
+   
+    </body>
 </html>
